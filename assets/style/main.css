@@ -126,3 +126,150 @@ button a {
   color: #ffffff;
 }
 
+.greenbg {
+  background-image: url(../image/pmv-chamara.jpg) ;
+  background-size: cover;
+  background-position: center;
+  height: 68rem;
+  padding: 4.8rem 1.6rem;
+  margin-bottom: 5rem;
+}
+
+.greenbg__title {
+  color: #ffffff;
+  font: 700 3rem "EB Garamond";
+  text-align: center;
+}
+
+.greenbg__subtitle{
+  font-weight: 600;
+  font-size:  2.4rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.greenbg__txt {
+  font-weight: 400;
+  font-size:  1.4rem;
+  color: #ffffff;
+  width: 35.8rem;
+  margin: 0 auto;
+}
+
+.voice {
+  width: 35.8rem;
+  height: 47.1rem;
+  margin: 0 auto;
+  border: solid 1px;
+}
+
+.voice__title {
+  font: 700 3rem "EB Garamond";
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.voice__subtitle {
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-bottom: 3.6rem;
+}
+
+.voice__content {
+  display: flex;
+  align-items: baseline;
+}
+
+/* jquery */
+.js-profile {
+  width: 28rem;
+  height: 34.4rem;
+  margin: 0 auto;
+  background-color: #dbf7f9;
+  border: 1px solid transparent
+}
+
+.voice__content--left, .voice__content--right {
+  cursor: pointer;
+}
+
+.js-profile {
+  display: none;
+}
+
+.js-profile.js-active {
+  display: block;
+}
+
+.voice__content__square--pic1 {
+  background-image: url(../image/person_a.jpg);
+  width: 8rem;
+  height: 8rem;
+  margin: 2.8rem 9.5rem 0.8rem 10.5rem;
+  border-radius: 50%;
+}
+
+.voice__content__square--pic2 {
+  background-image: url(../image/person_b.jpg);
+  background-position: 40% 10%;
+  width: 8rem;
+  height: 8rem;
+  margin: 2.8rem 9.5rem 0.8rem 10.5rem;
+  border-radius: 50%;
+}
+.voice__content__square--pic3 {
+  background-image: url(../image/person_c.jpg);
+  background-position: 40% 10%;
+  width: 8rem;
+  height: 8rem;
+  margin: 2.8rem 9.5rem 0.8rem 10.5rem;
+  border-radius: 50%;
+}
+.voice__content__square--pic4 {
+  background-image: url(../image/person_d.jpg);
+  background-position: 40% 10%;
+  width: 8rem;
+  height: 8rem;
+  margin: 2.8rem 9.5rem 0.8rem 10.5rem;
+  border-radius: 50%;
+}
+.voice__content__square--pic5 {
+  background-image: url(../image/person_e.jpg);
+  background-position: 40% 10%;
+  width: 8rem;
+  height: 8rem;
+  margin: 2.8rem 9.5rem 0.8rem 10.5rem;
+  border-radius: 50%;
+}
+
+.js-profile p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.voice__content__square--txt {
+  font-weight: 400;
+  font-size: 1.4rem;
+  width: 25rem;
+  margin: 0 auto;
+}
+
+
+
+.question {
+  border: solid 1px;
+  background: linear-gradient(to right, #007BFF, #4fa6fd);
+
+}
+
+
+
+
+
+
