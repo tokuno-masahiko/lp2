@@ -50,7 +50,7 @@ li, ol {
 }
 
 .Top__img {
-  background-image: url(../image/nora-topic.jpg) ;
+  background-image: url(../image/main.jpg) ;
   background-size: cover;
   background-position: center;
   height: 45rem;
@@ -127,7 +127,7 @@ button a {
 }
 
 .greenbg {
-  background-image: url(../image/pmv-chamara.jpg) ;
+  background-image: url(../image/cream.jpg) ;
   background-size: cover;
   background-position: center;
   height: 68rem;
@@ -180,10 +180,12 @@ button a {
 
 .voice__content {
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
+  height: 34.4rem;
 }
 
 /* jquery */
+
 .js-profile {
   width: 28rem;
   height: 34.4rem;
@@ -194,6 +196,9 @@ button a {
 
 .voice__content--left, .voice__content--right {
   cursor: pointer;
+  margin-top: 16rem;
+  width: 3.2rem;
+  height: 3.2rem;
 }
 
 .js-profile {
@@ -206,6 +211,8 @@ button a {
 
 .voice__content__square--pic1 {
   background-image: url(../image/person_a.jpg);
+  background-size: cover;
+  background-position: center;
   width: 8rem;
   height: 8rem;
   margin: 2.8rem 9.5rem 0.8rem 10.5rem;
@@ -215,30 +222,37 @@ button a {
 .voice__content__square--pic2 {
   background-image: url(../image/person_b.jpg);
   background-position: 40% 10%;
+  background-size: cover;
   width: 8rem;
   height: 8rem;
   margin: 2.8rem 9.5rem 0.8rem 10.5rem;
   border-radius: 50%;
 }
+
 .voice__content__square--pic3 {
   background-image: url(../image/person_c.jpg);
-  background-position: 40% 10%;
+  background-position: 60% 10%;
+  background-size: cover;
   width: 8rem;
   height: 8rem;
   margin: 2.8rem 9.5rem 0.8rem 10.5rem;
   border-radius: 50%;
 }
+
 .voice__content__square--pic4 {
   background-image: url(../image/person_d.jpg);
   background-position: 40% 10%;
+  background-size: cover;
   width: 8rem;
   height: 8rem;
   margin: 2.8rem 9.5rem 0.8rem 10.5rem;
   border-radius: 50%;
 }
+
 .voice__content__square--pic5 {
   background-image: url(../image/person_e.jpg);
   background-position: 40% 10%;
+  background-size: cover;
   width: 8rem;
   height: 8rem;
   margin: 2.8rem 9.5rem 0.8rem 10.5rem;
@@ -260,13 +274,58 @@ button a {
   margin: 0 auto;
 }
 
+.voice__indicator {
+  width: 9.4rem;
+  border: solid 2px;
+  margin: 0 auto;
+  text-align: center;
+}
 
+.voice__indicator--item {
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  background-color: #eeeeee;
+  border-radius: 50%;
+}
+
+.voice__indicator--item.js-active {
+  background-color: #00afbf;
+}
+
+/* Q&Aセクション */
 
 .question {
-  border: solid 1px;
-  background: linear-gradient(to right, #007BFF, #4fa6fd);
-
+  width: 39rem;
+  background: linear-gradient(to right, #f4ffe8, #c6f0fe);
+  margin-top: 5rem;
+  padding: 3.2rem 1.6rem;
 }
+
+.question__title {
+  font: 700 3rem "EB Garamond";
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.question__txt {
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.question__container {
+  width: 35.8rem;
+  margin: 0 auto 2rem auto;
+  background-color: #ffffff;
+}
+
+.question__container--a {
+  font-size: 1.5rem;
+}
+
+
 
 
 
