@@ -1,6 +1,6 @@
 /* media-query */
 html {
-  font-size: calc(10 * 100vw /375);
+  font-size: calc(10 * 100vw /390);
 }
 
 @media (min-width:768px) {
@@ -43,17 +43,31 @@ li, ol {
 } */
 
 /* TOPセクション */
-
 .Top {
-  width: 39rem;
-  border: solid 1px;
+  height: 55.7rem;
+}
+@media (min-width:768px) {
+  .Top {
+    height: 72rem;
+  }
 }
 
 .Top__img {
   background-image: url(../image/main.jpg) ;
   background-size: cover;
   background-position: center;
+  width: 39rem;
   height: 45rem;
+  margin: 0 auto ;
+}
+@media (min-width:768px) {
+  .Top__img {
+    width: 150rem;
+    height: 100%;
+    background-image: url(../image/main_pc.jpg) ;
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 .Top__img--title{
@@ -62,11 +76,23 @@ li, ol {
   padding-top: 2.4rem;
   text-align: center;
 }
+@media (min-width:768px) {
+  .Top__img--title{
+    font: 400 2.8rem "Marcellus", serif;
+    padding-top: 3.2rem;
+  }
+}
 
 .Top__title {
   font: 400 4.1rem "Marcellus", serif;
   letter-spacing: 0.3em;
-  margin: -3.2rem 0 0.8rem 2.3rem;
+  margin: 36.4rem 0 0.8rem 2.3rem;
+}
+@media (min-width:768px) {
+  .Top__title {
+    font: 400 5rem "Marcellus", serif;
+    margin: 20.5rem auto 1rem 22.3rem;
+  }
 }
 
 .Top__txt {
@@ -74,7 +100,12 @@ li, ol {
   letter-spacing: 0.3em;
   margin-left: 2.3rem;
 }
-
+@media (min-width:768px) {
+  .Top__txt {
+    font-size: 2.5rem;
+    margin-left: 22.3rem;
+  }
+}
 
 /* 購入ボタンセクション */
 
@@ -85,6 +116,17 @@ li, ol {
   background-color: #f0f4ff;
   padding: 2rem 0;
 }
+@media (min-width:768px) {
+  .shop {
+    width: 100rem;
+    height: 14.6rem;
+    margin: 4.8rem auto;
+    padding: 4rem 4.8rem;
+    background-color: #f0f4ff;
+    display: flex;
+    align-items: center;
+  }
+}
 
 .shop__title {
   font-size: 1.8rem;
@@ -92,12 +134,25 @@ li, ol {
   font-weight: 600;
   text-align: center;
 }
+@media (min-width:768px) {
+  .shop__title {
+    font-size: 2.4rem;
+    text-align: left;
+    width: 21.1rem;
+  }
+}
 
 .shop__cost {
   font-size: 1.4rem;
   letter-spacing: 0.1em;
   font-weight: 400;
   text-align: center;
+}
+@media (min-width:768px) {
+  .shop__cost {
+    font-size: 1.6rem;
+    text-align: left;
+  }
 }
 
 .shop__button--blue {
@@ -110,6 +165,11 @@ li, ol {
   margin: 2rem auto;
   border-radius: 2.9rem;
 }
+@media (min-width:768px) {
+  .shop__button--blue {
+    margin: 0 3.2rem 0 6.4rem;
+  }
+}
 
 .shop__button--green {
   font-size: 1.8rem;
@@ -120,6 +180,11 @@ li, ol {
   display: block;
   margin: 2rem auto;
   border-radius: 2.9rem;
+}
+@media (min-width:768px) {
+  .shop__button--green {
+    margin: 0 auto;
+  }
 }
 
 button a {
@@ -134,11 +199,24 @@ button a {
   padding: 4.8rem 1.6rem;
   margin-bottom: 5rem;
 }
+@media (min-width:768px) {
+  .greenbg {
+    background-image: url(../image/cream_pc.jpg) ;
+    height: 55rem;
+    padding: 12.7rem 20.4rem 12.7rem 82.9rem;
+  }
+}
 
 .greenbg__title {
   color: #ffffff;
   font: 700 3rem "EB Garamond";
   text-align: center;
+}
+@media (min-width:768px) {
+  .greenbg__title {
+    font-size: 3.8rem;
+    text-align-last: left;
+  }
 }
 
 .greenbg__subtitle{
@@ -148,6 +226,12 @@ button a {
   text-align: center;
   margin-bottom: 2rem;
 }
+@media (min-width:768px) {
+  .greenbg__subtitle{
+    text-align: left;
+    margin-bottom: 2.4rem;
+  }
+}
 
 .greenbg__txt {
   font-weight: 400;
@@ -156,18 +240,35 @@ button a {
   width: 35.8rem;
   margin: 0 auto;
 }
+@media (min-width:768px) {
+  .greenbg__txt {
+    margin: unset;
+    width: 42.9rem;
+  }
+}
+/* voiceセクション */
 
 .voice {
   width: 35.8rem;
   height: 47.1rem;
   margin: 0 auto;
-  border: solid 1px;
+}
+@media (min-width:768px) {
+  .voice {
+    width: 115.6rem;
+    height: 55.6rem;
+  }
 }
 
 .voice__title {
   font: 700 3rem "EB Garamond";
   text-align: center;
   letter-spacing: 0.05em;
+}
+@media (min-width:768px) {
+  .voice__title {
+    font: 700 4.5rem "EB Garamond";
+  }
 }
 
 .voice__subtitle {
@@ -177,22 +278,43 @@ button a {
   letter-spacing: 0.05em;
   margin-bottom: 3.6rem;
 }
+@media (min-width:768px) {
+  .voice__subtitle {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+}
 
 .voice__content {
   display: flex;
   align-items: flex-start;
   height: 34.4rem;
 }
+@media (min-width:768px) {
+  .voice__content {
+    height: 38.8rem;
+    width: 100%;
+  }
+}
 
 /* jquery */
 
 .js-profile {
   width: 28rem;
-  height: 34.4rem;
+  height: 100%;
   margin: 0 auto;
   background-color: #dbf7f9;
   border: 1px solid transparent
 }
+@media (min-width:768px) {
+  .js-profile {
+    width: 30rem;
+    height: 100%;
+    margin: 0 2rem;
+  }
+}
+
 
 .voice__content--left, .voice__content--right {
   cursor: pointer;
@@ -200,9 +322,21 @@ button a {
   width: 3.2rem;
   height: 3.2rem;
 }
+@media (min-width:768px) {
+  .voice__content--left, .voice__content--right {
+    margin: 15rem 4rem 0 4rem;
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+}
 
 .js-profile {
   display: none;
+}
+@media (min-width:768px) {
+  .js-profile {
+    display: none;
+  }
 }
 
 .js-profile.js-active {
@@ -266,6 +400,12 @@ button a {
   margin-bottom: 2rem;
   text-align: center;
 }
+@media (min-width:768px) {
+  .js-profile p {
+    font-size: 1.5rem;
+    margin-bottom: 1.6rem;
+  }
+}
 
 .voice__content__square--txt {
   font-weight: 400;
@@ -273,10 +413,15 @@ button a {
   width: 25rem;
   margin: 0 auto;
 }
+@media (min-width:768px) {
+  .voice__content__square--txt {
+    font-size: 1.6rem;
+    width: 26.8rem;
+  }
+}
 
 .voice__indicator {
   width: 9.4rem;
-  border: solid 2px;
   margin: 0 auto;
   text-align: center;
 }
@@ -287,6 +432,11 @@ button a {
   height: 0.9rem;
   background-color: #eeeeee;
   border-radius: 50%;
+}
+@media (min-width:768px) {
+  .voice__indicator--item:nth-child(n+3):nth-child(-n+6) {
+    display: none;
+  }
 }
 
 .voice__indicator--item.js-active {
@@ -313,17 +463,89 @@ button a {
   font-weight: 600;
   letter-spacing: 0.05em;
   text-align: center;
+  margin-bottom: 3.7rem;
 }
 
 .question__container {
   width: 35.8rem;
   margin: 0 auto 2rem auto;
   background-color: #ffffff;
+  cursor: pointer;
+  padding: 2rem 1.6rem 0 1.66rem;
+  border: 1px solid transparent
+
 }
 
-.question__container--a {
-  font-size: 1.5rem;
+.question__container__txt--q {
+  font: 400 1.6rem/2 "EB Garamond";
+  letter-spacing: 0.05em;
 }
+
+.question__container__txt {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 1.9rem;
+}
+
+.question__container__txt--a {
+  font-size: 1.49rem;
+}
+
+.question__container__txt--tag1 {
+  display: none;
+  line-height: 3.5;
+}
+
+.question__container__txt--tag2 {
+  display: block;
+  line-height: 3.5;
+}
+
+.js-txt1, .js-txt2, .js-txt3, .js-txt4, .js-txt5 {
+  display: none;
+}
+
+/* footer */
+
+.footer img {
+  width: 4rem;
+  height: 4rem;
+  display: block;
+  margin-left: auto;
+  margin-right: 1.6rem;
+}
+
+.footer__container {
+  background-color: #0071ce;
+  padding: 2.4rem 4.5rem;
+}
+
+.footer__container__title {
+  font: 400 2.8rem 'Marcellus';
+  color: #ffffff;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+.footer__container__menu {
+  display: flex;
+  width: 30rem;
+  margin: 2.4rem 0 2.5rem;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.footer__container__menu a {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.footer__container p {
+  color: #ffffff;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
 
 
 
