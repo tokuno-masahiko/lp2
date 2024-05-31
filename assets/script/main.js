@@ -1,10 +1,10 @@
 $(document).ready(function() {
-  let profiles = ['.voice__content__square1', '.voice__content__square2', '.voice__content__square3', '.voice__content__square4', '.voice__content__square5'];
+  let profiles = ['.voice__content__square1', '.voice__content__square2', '.voice__content__square3', '.voice__content__square4', '.voice__content__square5', '.voice__content__square6'];
   let profileIndex = 0;
   let indicatorIndex = 0;
   const profilesPerView = 3;
   const totalViews = Math.ceil(profiles.length / profilesPerView);
-  
+
   if ($(window).width() < 767.9) {
   function showProfile(index) {
       $('.js-profile').removeClass('js-active');
