@@ -333,11 +333,6 @@ button a {
 .js-profile {
   display: none;
 }
-@media (min-width:768px) {
-  .js-profile {
-    display: none;
-  }
-}
 
 .js-profile.js-active {
   display: block;
