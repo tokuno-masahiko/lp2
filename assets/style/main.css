@@ -37,11 +37,6 @@ li, ol {
   list-style: none;
 }
 
-/* @media (max-width:767px) {
-}
-@media (min-width:768px) {
-} */
-
 /* TOPセクション */
 .Top {
   height: 55.7rem;
@@ -56,13 +51,11 @@ li, ol {
   background-image: url(../image/main.jpg) ;
   background-size: cover;
   background-position: center;
-  width: 39rem;
   height: 45rem;
   margin: 0 auto ;
 }
 @media (min-width:768px) {
   .Top__img {
-    width: 150rem;
     height: 100%;
     background-image: url(../image/main_pc.jpg) ;
     background-size: cover;
@@ -83,6 +76,14 @@ li, ol {
   }
 }
 
+@media (min-width:768px) {
+  .Top__comp{
+    max-width: 120rem;
+    width: 120rem;
+    margin: 0 auto;
+  }
+}
+
 .Top__title {
   font: 400 4.1rem "Marcellus", serif;
   letter-spacing: 0.3em;
@@ -91,7 +92,7 @@ li, ol {
 @media (min-width:768px) {
   .Top__title {
     font: 400 5rem "Marcellus", serif;
-    margin: 20.5rem auto 1rem 22.3rem;
+    margin: 20.5rem auto 1rem 7.3rem;
   }
 }
 
@@ -103,7 +104,7 @@ li, ol {
 @media (min-width:768px) {
   .Top__txt {
     font-size: 2.5rem;
-    margin-left: 22.3rem;
+    margin-left: 7.3rem;
   }
 }
 
@@ -203,7 +204,24 @@ button a {
   .greenbg {
     background-image: url(../image/cream_pc.jpg) ;
     height: 55rem;
-    padding: 12.7rem 20.4rem 12.7rem 82.9rem;
+    padding: 12.7rem 0 12.7rem 0;
+  }
+}
+
+@media (min-width:768px) {
+  .greenbg__comp {
+    max-width: 120rem;
+    width: 120rem;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:768px) {
+  .greenbg__container {
+    width: 46.7rem;
+    height: 29.6rem;
+    margin-left: 67.9rem;
+    margin-right: 5.4rem;
   }
 }
 
@@ -246,9 +264,124 @@ button a {
     width: 42.9rem;
   }
 }
-/* voiceセクション */
 
+
+/* voiceセクション */
 .voice {
+  width: 35.8rem;
+  height: 47.1rem;
+  margin: 0 auto;
+}
+@media (min-width:768px) {
+  .voice {
+    width: 115.6rem;
+    height: 55.6rem;
+  }
+}
+
+.voice__title {
+  font: 700 3rem "EB Garamond";
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+@media (min-width:768px) {
+  .voice__title {
+    font: 700 4.5rem "EB Garamond";
+  }
+}
+
+.voice__subtitle {
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-bottom: 3.6rem;
+}
+@media (min-width:768px) {
+  .voice__subtitle {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.swiper {
+  border: blue solid 1px;
+}
+
+/* @media (min-width:768px) { */
+.swiper--wrapper {
+  /* wrapperのサイズを調整 */
+  border: red solid 1px;
+}
+
+.swiper-card {
+  /* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
+  background-color: #dbf7f9;
+  width: 28rem;
+  height: 34.4rem;
+  margin: 0 auto;
+  padding: 2.8rem 0;
+}
+
+.swiper-img {
+  background-image: url(../image/person_b.jpg);
+  background-size: cover;
+  background-position: 40% 10%;
+  width: 8rem;
+  height: 8rem;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.swiper-card p {
+  margin-top: 0.8rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+@media (min-width:768px) {
+  .swiper-card p {
+    font-size: 1.5rem;
+    margin-bottom: 1.6rem;
+  }
+}
+
+.swiper-txt {
+  font-weight: 400;
+  font-size: 1.4rem;
+  width: 25rem;
+  margin: 0 auto;
+}
+@media (min-width:768px) {
+  .swiper-txt {
+    font-size: 1.6rem;
+    width: 26.8rem;
+  }
+}
+
+.swiper-button-prev, .swiper-button-next {
+  background-size: contain;
+  background-position: center;
+  width: 3.2rem;  /* 画像のサイズに合わせて調整 */
+  height: 3.2rem; /* 画像のサイズに合わせて調整 */
+}
+.swiper-button-prev {
+  background-image: url(../image/arrow-left-circle-fill.png); /* prevボタンの画像 */
+}
+.swiper-button-next {
+  background-image: url(../image/arrow-right-circle-fill.png); /* nextボタンの画像 */
+}
+
+/* デフォルトの背景画像を削除 */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+/* } */
+/* .voice {
   width: 35.8rem;
   height: 47.1rem;
   margin: 0 auto;
@@ -290,6 +423,7 @@ button a {
   display: flex;
   align-items: flex-start;
   height: 34.4rem;
+  justify-content: center;
 }
 @media (min-width:768px) {
   .voice__content {
@@ -297,9 +431,6 @@ button a {
     width: 100%;
   }
 }
-
-/* jquery */
-
 .js-profile {
   width: 28rem;
   height: 100%;
@@ -324,7 +455,7 @@ button a {
 }
 @media (min-width:768px) {
   .voice__content--left, .voice__content--right {
-    margin: 15rem 4rem 0 4rem;
+    margin: 15rem 0 4rem;
     width: 4.8rem;
     height: 4.8rem;
   }
@@ -333,20 +464,10 @@ button a {
 .js-profile {
   display: none;
 }
-/* @media (max-width:767.9px) {
-  .js-profile {
-    display: none;
-  }
-} */
 
 .js-profile.js-active {
   display: block;
 }
-/* @media (max-width:767.9px) {
-  .js-profile.js-active {
-    display: block;
-  }
-} */
 
 .voice__content__square--pic1 {
   background-image: url(../image/person_a.jpg);
@@ -434,30 +555,6 @@ button a {
     width: 26.8rem;
   }
 }
-
-.voice__indicator {
-  width: 9.4rem;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.voice__indicator--item {
-  display: inline-block;
-  width: 0.9rem;
-  height: 0.9rem;
-  background-color: #eeeeee;
-  border-radius: 50%;
-}
-@media (min-width:768px) {
-  .voice__indicator--item:nth-child(n+3):nth-child(-n+6) {
-    display: none;
-  }
-}
-
-.voice__indicator--item.js-active {
-  background-color: #00afbf;
-}
-
 /* Q&Aセクション */
 
 .question {

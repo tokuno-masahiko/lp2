@@ -1,81 +1,151 @@
-$(document).ready(function() {
-  let profiles = ['.voice__content__square1', '.voice__content__square2', '.voice__content__square3', '.voice__content__square4', '.voice__content__square5', '.voice__content__square6'];
-  let profileIndex = 0;
-  let indicatorIndex = 0;
-  const profilesPerView = 3;
-  const totalViews = Math.ceil(profiles.length / profilesPerView);
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  // spaceBetween: 40,
+  // Optional parameters
+  loop: true,
 
-  if ($(window).width() < 767.9) {
-  function showProfile(index) {
-      $('.js-profile').removeClass('js-active');
-      $(profiles[index]).addClass('js-active');
-  }
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + '</span>';
+    },
+  },
 
-  function updateIndicators(index) {
-    $('.voice__indicator--item').removeClass('js-active');
-    $('.voice__indicator--item[data-index=' + index + ']').addClass('js-active');
-  }
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
-  function updateDisplay() {
-    showProfile(profileIndex);
-    updateIndicators(indicatorIndex);
-  }
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
 
-  $('.voice__content--left').click(function() {
-    profileIndex = (profileIndex - 1 + profiles.length) % profiles.length;
-    indicatorIndex = (indicatorIndex - 1 + 6) % 6;
-    updateDisplay();
-  });
+    // // Swiperの初期化
+    //   pagination: {
+    //     el: '.swiper-pagination',
+    //     clickable: true,
+    //     renderBullet: function (index, className) {
+    //       return '<span class="' + className + '">' + (index + 1) + '</span>';
+    //     },
+    //   },
+    //   navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev',
+    //   },
+    //   breakpoints: {
+    //     768: {
+    //       slidesPerView: 3, // 768px以上では3枚表示
+    //       slidesPerGroup: 3, // 768px以上では3枚ずつ移動
+    //       pagination: {
+    //         el: '.swiper-pagination',
+    //         clickable: true,
+    //         renderBullet: function (index, className) {
+    //           if (index < 2) {
+    //             return '<span class="' + className + '">' + (index + 1) + '</span>';
+    //           }
+    //           return '';
+    //         },
+    //       },
+    //     },
+    //     0: {
+    //       slidesPerView: 1, // 768px未満では1枚表示
+    //       slidesPerGroup: 1, // 768px未満では1枚ずつ移動
+    //       pagination: {
+    //         el: '.swiper-pagination',
+    //         clickable: true,
+    //         renderBullet: function (index, className) {
+    //           return '<span class="' + className + '">' + (index + 1) + '</span>';
+    //         },
+    //       },
+    //     }
+    //   }
+    // });
 
-  $('.voice__content--right').click(function() {
-    profileIndex = (profileIndex + 1) % profiles.length;
-    indicatorIndex = (indicatorIndex + 1) % 6;
-    updateDisplay();
-  });
 
-  $('.voice__indicator--item').click(function() {
-    indicatorIndex = $(this).data('index');
-    profileIndex = indicatorIndex % profiles.length;
-    updateDisplay();
-  });
 
-} else {
+  // let profiles = ['.voice__content__square1', '.voice__content__square2', '.voice__content__square3', '.voice__content__square4', '.voice__content__square5', '.voice__content__square6'];
+  // let currentIndex = 0;
+  // let profilesPerView = 1; // 初期値として768px未満の表示枚数
+  // let totalViews = Math.ceil(profiles.length / profilesPerView);
 
-  function showProfiles(index) {
-    $('.js-profile').removeClass('js-active');
-    if (index === 0) {
-      for (let i = 0; i < profilesPerView; i++) {
-          $(profiles[i]).addClass('js-active');
-      }
-    } else {
-      for (let i = profilesPerView; i < profiles.length; i++) {
-          $(profiles[i]).addClass('js-active');
-      }
-    }
-    updateIndicators(index);
-  }
+  // function updateDisplay() {
+  //     $('.js-profile').removeClass('js-active');
+  //     if (profilesPerView === 1) {
+  //         $(profiles[currentIndex]).addClass('js-active');
+  //     } else {
+  //         for (let i = 0; i < profilesPerView; i++) {
+  //             let index = (currentIndex + i) % profiles.length;
+  //             $(profiles[index]).addClass('js-active');
+  //         }
+  //     }
+  //     updateIndicators(currentIndex);
+  // }
 
-  function updateIndicators(index) {
-      $('.voice__indicator--item').removeClass('js-active');
-      $('.voice__indicator--item[data-index=' + index + ']').addClass('js-active');
-  }
+  // function updateIndicators(index) {
+  //     $('.voice__indicator--item').removeClass('js-active');
+  //     if (profilesPerView === 1) {
+  //         $('.voice__indicator--item[data-index=' + index + ']').addClass('js-active');
+  //     } else {
+  //       if (index < 3) {
+  //         $('.voice__indicator--item[data-index=0]').addClass('js-active');
+  //       } else {
+  //         $('.voice__indicator--item[data-index=1]').addClass('js-active');
+  //       }
+  //     }
+  // }
 
-  $('.voice__content--left').click(function() {
-      indicatorIndex = (indicatorIndex - 1 + totalViews) % totalViews;
-      showProfiles(indicatorIndex);
-  });
+  // $('.voice__content--left').click(function() {
+  //     currentIndex = (currentIndex - profilesPerView + profiles.length) % profiles.length;
+  //     updateDisplay();
+  // });
 
-  $('.voice__content--right').click(function() {
-      indicatorIndex = (indicatorIndex + 1) % totalViews;
-      showProfiles(indicatorIndex);
-  });
+  // $('.voice__content--right').click(function() {
+  //     currentIndex = (currentIndex + profilesPerView) % profiles.length;
+  //     updateDisplay();
+  // });
 
-  $('.voice__indicator--item').click(function() {
-      indicatorIndex = $(this).data('index');
-      showProfiles(indicatorIndex);
-  });
-  showProfiles(indicatorIndex);
-}
+  // $('.voice__indicator--item').click(function() {
+  //     let index = $(this).data('index');
+  //     currentIndex = index;
+  //     updateDisplay();
+  // });
+
+  // function checkWindowSize() {
+  //     if ($(window).width() >= 768) {
+  //         profilesPerView = 3;
+  //         totalViews = Math.ceil(profiles.length / profilesPerView);
+  //         $('.indicator-container').html(`
+  //             <div class="indicator active" data-index="0"></div>
+  //             <div class="indicator" data-index="1"></div>
+  //         `);
+  //     } else {
+  //         profilesPerView = 1;
+  //         totalViews = profiles.length;
+  //         $('.indicator-container').html(`
+  //             <div class="indicator active" data-index="0"></div>
+  //             <div class="indicator" data-index="1"></div>
+  //             <div class="indicator" data-index="2"></div>
+  //             <div class="indicator" data-index="3"></div>
+  //             <div class="indicator" data-index="4"></div>
+  //             <div class="indicator" data-index="5"></div>
+  //         `);
+  //     }
+  //     updateDisplay();
+  // }
+
+  // $(window).resize(function() {
+  //     checkWindowSize();
+  // });
+
+  // // 初期ロード時にチェック
+  // checkWindowSize();
+
 
   for (let i = 1; i <= 5; i++) {
     $(`.js-container${i}`).click(function() {
@@ -90,4 +160,3 @@ $(document).ready(function() {
       }
     });
   }
-});
