@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>肌のうるおい、煌めく Kirameki Cream | Kira-meki</title>
 
+
   <!-- Google Fontsからフォントをインポート -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Marcellus&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link href="./assets/style/main.css" rel="stylesheet" type="text/css" media="all">
   <meta name="description" content="Kirameki Creamはお肌のうるおいを美しく保ちます">
 
@@ -30,9 +32,11 @@
     <!-- header -->
     <header class="Top">
       <div class="Top__img">
-        <div class="Top__img--title">Kira-meki</div>
-        <div class="Top__title">Kirameki<br>Cream</div>
-        <div class="Top__txt">肌のうるおい、煌めく。</div>
+        <div class="Top__comp">
+          <div class="Top__img--title">Kira-meki</div>
+          <div class="Top__title">Kirameki<br>Cream</div>
+          <div class="Top__txt">肌のうるおい、煌めく。</div>
+        </div>
       </div>
     </header>
 
@@ -48,18 +52,45 @@
 
     <!-- 広告セクション -->
     <section class="greenbg">
-      <div class="greenbg__title">Keep Your Skin Beautiful.</div>
-      <div class="greenbg__subtitle">お肌を美しく保つ</div>
-      <div class="greenbg__txt">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</div>
+      <div class="greenbg__comp">
+        <div class="greenbg__container">
+          <div class="greenbg__title">Keep Your Skin Beautiful.</div>
+          <div class="greenbg__subtitle">お肌を美しく保つ</div>
+          <div class="greenbg__txt">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</div>
+        </div>
+      </div>
     </section>
 
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
     <!-- お客様の声セクション -->
-    <section class="voice">
+    <!-- <section class="voice">
       <div class="voice__title">Voices</div>
       <div class="voice__subtitle">お客様の声</div>
       <div class="voice__content">
         <img class="voice__content--left" src="/assets/image/arrow-left-circle-fill.png" alt="左矢印">
-        <div class="voice__content__square1 js-active js-profile">
+        <div class="voice__content__square1 js-profile">
           <div class="voice__content__square--pic1"></div>
           <p>Aさん</p>
           <div class="voice__content__square--txt">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</div>
@@ -99,7 +130,7 @@
         <div class="voice__indicator--item" data-index="4"></div>
         <div class="voice__indicator--item" data-index="5"></div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Q&Aセクション -->
     <section class="question">
@@ -194,6 +225,7 @@
       </div>
     </footer>
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="./assets/script/main.js"></script>
 </body>
