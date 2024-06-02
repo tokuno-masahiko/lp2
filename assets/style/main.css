@@ -145,6 +145,7 @@ li, ol {
 
 .shop__cost {
   font-size: 1.4rem;
+  line-height: 1.5;
   letter-spacing: 0.1em;
   font-weight: 400;
   text-align: center;
@@ -163,12 +164,12 @@ li, ol {
   width: 30rem;
   height: 5.8rem;
   display: block;
-  margin: 2rem auto;
+  margin: 1.8rem auto;
   border-radius: 2.9rem;
 }
 @media (min-width:768px) {
   .shop__button--blue {
-    margin: 0 3.2rem 0 6.4rem;
+    margin: 0 3.0rem 0 6.4rem;
   }
 }
 
@@ -192,19 +193,24 @@ button a {
   color: #ffffff;
 }
 
+button form {
+  color: #ffffff;
+}
+
 .greenbg {
   background-image: url(../image/cream.jpg) ;
   background-size: cover;
   background-position: center;
   height: 68rem;
-  padding: 4.8rem 1.6rem;
+  padding: 4.3rem 1.6rem;
   margin-bottom: 5rem;
 }
 @media (min-width:768px) {
   .greenbg {
     background-image: url(../image/cream_pc.jpg) ;
     height: 55rem;
-    padding: 12.7rem 0 12.7rem 0;
+    padding: 12.2rem 0;
+    margin-bottom: 8rem;
   }
 }
 
@@ -228,32 +234,38 @@ button a {
 .greenbg__title {
   color: #ffffff;
   font: 700 3rem "EB Garamond";
+  line-height: 1.8;
   text-align: center;
 }
 @media (min-width:768px) {
   .greenbg__title {
     font-size: 3.8rem;
     text-align-last: left;
+  line-height: 1.4;
+
   }
 }
 
 .greenbg__subtitle{
   font-weight: 600;
   font-size:  2.4rem;
+  line-height: 1.4;
   color: #ffffff;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.4rem;
 }
 @media (min-width:768px) {
   .greenbg__subtitle{
     text-align: left;
-    margin-bottom: 2.4rem;
+    line-height: 2.25;
+    margin-bottom: 1.1rem;
   }
 }
 
 .greenbg__txt {
   font-weight: 400;
   font-size:  1.4rem;
+  line-height: 2.285;
   color: #ffffff;
   width: 35.8rem;
   margin: 0 auto;
@@ -271,6 +283,7 @@ button a {
   width: 35.8rem;
   height: 47.1rem;
   margin: 0 auto;
+  position: relative;
 }
 @media (min-width:768px) {
   .voice {
@@ -301,43 +314,77 @@ button a {
   .voice__subtitle {
     font-weight: 600;
     font-size: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3.8rem;
   }
 }
 
-.swiper {
-  border: blue solid 1px;
-}
-
-/* @media (min-width:768px) { */
-.swiper--wrapper {
-  /* wrapperのサイズを調整 */
-  border: red solid 1px;
+@media (min-width:768px) {
+  .swiper {
+    width: 98rem;
+    height: 38.8rem;
+  }
 }
 
 .swiper-card {
-  /* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
   background-color: #dbf7f9;
   width: 28rem;
   height: 34.4rem;
   margin: 0 auto;
-  padding: 2.8rem 0;
+  border: 1px solid transparent;
+}
+@media (min-width:768px) {
+  .swiper-card {
+    width: 30rem;
+    height: 38.8rem;
+  }
 }
 
-.swiper-img {
-  background-image: url(../image/person_b.jpg);
+.swiper-img1, .swiper-img2, .swiper-img3, .swiper-img4, .swiper-img5, .swiper-img6 {
   background-size: cover;
   background-position: 40% 10%;
   width: 8rem;
   height: 8rem;
-  margin: 0 auto;
+  margin: 2.8rem auto 0;
   border-radius: 50%;
 }
+@media (min-width:768px) {
+  .swiper-img1, .swiper-img2, .swiper-img3, .swiper-img4, .swiper-img5, .swiper-img6 {
+    width: 10rem;
+    height: 10rem;
+    margin: 4rem auto 0;
+  }
+}
+
+.swiper-img1 {
+  background-image: url(../image/person_a.jpg);
+}
+
+.swiper-img2 {
+  background-image: url(../image/person_b.jpg);
+}
+
+.swiper-img3 {
+  background-image: url(../image/person_c.jpg);
+}
+
+.swiper-img4 {
+  background-image: url(../image/person_d.jpg);
+}
+
+.swiper-img5 {
+  background-image: url(../image/person_e.jpg);
+}
+
+.swiper-img6 {
+  background-image: url(../image/person_f.jpg);
+}
+
 
 .swiper-card p {
   margin-top: 0.8rem;
   font-weight: 400;
   font-size: 1.4rem;
+  line-height: 1;
   letter-spacing: 0.05em;
   margin-bottom: 2rem;
   text-align: center;
@@ -352,6 +399,7 @@ button a {
 .swiper-txt {
   font-weight: 400;
   font-size: 1.4rem;
+  line-height: 2;
   width: 25rem;
   margin: 0 auto;
 }
@@ -359,20 +407,45 @@ button a {
   .swiper-txt {
     font-size: 1.6rem;
     width: 26.8rem;
+    line-height: 1.75;
   }
 }
 
 .swiper-button-prev, .swiper-button-next {
   background-size: contain;
   background-position: center;
-  width: 3.2rem;  /* 画像のサイズに合わせて調整 */
-  height: 3.2rem; /* 画像のサイズに合わせて調整 */
+  width: 3.2rem;
+  height: 3.2rem;
 }
+@media (min-width:768px) {
+  .swiper-button-prev, .swiper-button-next {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+}
+
 .swiper-button-prev {
-  background-image: url(../image/arrow-left-circle-fill.png); /* prevボタンの画像 */
+  top: 28rem;
+  left: 0rem;
+  background-image: url(../image/arrow-left-circle-fill.png);
 }
+@media (min-width:768px) {
+  .swiper-button-prev {
+    top: 32.3rem;
+    left: 0rem;
+  }
+}
+
 .swiper-button-next {
+  top: 28rem;
+  right: 0rem;
   background-image: url(../image/arrow-right-circle-fill.png); /* nextボタンの画像 */
+}
+@media (min-width:768px) {
+  .swiper-button-next {
+    top: 32.3rem;
+    right: 0rem;
+  }
 }
 
 /* デフォルトの背景画像を削除 */
@@ -380,191 +453,23 @@ button a {
 .swiper-button-next::after {
   display: none;
 }
-/* } */
-/* .voice {
-  width: 35.8rem;
-  height: 47.1rem;
-  margin: 0 auto;
-}
-@media (min-width:768px) {
-  .voice {
-    width: 115.6rem;
-    height: 55.6rem;
-  }
+
+.swiper-pagination {
+  bottom: 0rem !important;
 }
 
-.voice__title {
-  font: 700 3rem "EB Garamond";
-  text-align: center;
-  letter-spacing: 0.05em;
-}
-@media (min-width:768px) {
-  .voice__title {
-    font: 700 4.5rem "EB Garamond";
-  }
-}
-
-.voice__subtitle {
-  font-weight: 600;
-  font-size: 1.6rem;
-  text-align: center;
-  letter-spacing: 0.05em;
-  margin-bottom: 3.6rem;
-}
-@media (min-width:768px) {
-  .voice__subtitle {
-    font-weight: 600;
-    font-size: 2rem;
-    margin-bottom: 4rem;
-  }
-}
-
-.voice__content {
-  display: flex;
-  align-items: flex-start;
-  height: 34.4rem;
-  justify-content: center;
-}
-@media (min-width:768px) {
-  .voice__content {
-    height: 38.8rem;
-    width: 100%;
-  }
-}
-.js-profile {
-  width: 28rem;
-  height: 100%;
-  margin: 0 auto;
-  background-color: #dbf7f9;
-  border: 1px solid transparent
-}
-@media (min-width:768px) {
-  .js-profile {
-    width: 30rem;
-    height: 100%;
-    margin: 0 2rem;
-  }
-}
-
-
-.voice__content--left, .voice__content--right {
-  cursor: pointer;
-  margin-top: 16rem;
-  width: 3.2rem;
-  height: 3.2rem;
-}
-@media (min-width:768px) {
-  .voice__content--left, .voice__content--right {
-    margin: 15rem 0 4rem;
-    width: 4.8rem;
-    height: 4.8rem;
-  }
-}
-
-.js-profile {
-  display: none;
-}
-
-.js-profile.js-active {
-  display: block;
-}
-
-.voice__content__square--pic1 {
-  background-image: url(../image/person_a.jpg);
-  background-size: cover;
-  background-position: center;
-  width: 8rem;
-  height: 8rem;
-  margin: 2.8rem 9.5rem 0.8rem 10.5rem;
-  border-radius: 50%;
-}
-
-.voice__content__square--pic2 {
-  background-image: url(../image/person_b.jpg);
-  background-position: 40% 10%;
-  background-size: cover;
-  width: 8rem;
-  height: 8rem;
-  margin: 2.8rem 9.5rem 0.8rem 10.5rem;
-  border-radius: 50%;
-}
-
-.voice__content__square--pic3 {
-  background-image: url(../image/person_c.jpg);
-  background-position: 60% 10%;
-  background-size: cover;
-  width: 8rem;
-  height: 8rem;
-  margin: 2.8rem 9.5rem 0.8rem 10.5rem;
-  border-radius: 50%;
-}
-
-.voice__content__square--pic4 {
-  background-image: url(../image/person_d.jpg);
-  background-position: 40% 10%;
-  background-size: cover;
-  width: 8rem;
-  height: 8rem;
-  margin: 2.8rem 9.5rem 0.8rem 10.5rem;
-  border-radius: 50%;
-}
-
-.voice__content__square--pic5 {
-  background-image: url(../image/person_e.jpg);
-  background-position: 40% 10%;
-  background-size: cover;
-  width: 8rem;
-  height: 8rem;
-  margin: 2.8rem 9.5rem 0.8rem 10.5rem;
-  border-radius: 50%;
-}
-
-.voice__content__square--pic6 {
-  background-image: url(../image/person_f.jpg);
-  background-position: 40% 10%;
-  background-size: cover;
-  width: 8rem;
-  height: 8rem;
-  margin: 2.8rem 9.5rem 0.8rem 10.5rem;
-  border-radius: 50%;
-}
-
-.js-profile p {
-  font-weight: 400;
-  font-size: 1.4rem;
-  letter-spacing: 0.05em;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-@media (min-width:768px) {
-  .js-profile p {
-    font-size: 1.5rem;
-    margin-bottom: 1.6rem;
-  }
-}
-
-.voice__content__square--txt {
-  font-weight: 400;
-  font-size: 1.4rem;
-  width: 25rem;
-  margin: 0 auto;
-}
-@media (min-width:768px) {
-  .voice__content__square--txt {
-    font-size: 1.6rem;
-    width: 26.8rem;
-  }
-}
 /* Q&Aセクション */
 
 .question {
   background: linear-gradient(to right, #f4ffe8, #c6f0fe);
   margin-top: 5rem;
-  padding: 3.2rem 1.6rem;
+  padding: 3.2rem 1.6rem 1.3rem 1.6rem;
 }
 @media (min-width:768px) {
   .question {
-  padding: 4rem;
+    margin-top: 8rem;
+    padding: 4rem 4rem 1.3rem 4rem;
+
   }
 }
 
@@ -584,7 +489,7 @@ button a {
   font-weight: 600;
   letter-spacing: 0.05em;
   text-align: center;
-  margin-bottom: 3.7rem;
+  margin-bottom: 3.5rem;
 }
 @media (min-width:768px) {
   .question__txt {
@@ -598,14 +503,14 @@ button a {
   margin: 0 auto 2rem auto;
   background-color: #ffffff;
   cursor: pointer;
-  padding: 2rem 1.6rem 0 1.66rem;
+  padding: 1.4rem 1.6rem 1rem 1.66rem;
   border: 1px solid transparent
 }
 @media (min-width:768px) {
   .question__container {
     width: 60rem;
     margin: 0 auto 2.4rem auto;
-    padding: 2.4rem 2.5rem;
+    padding: 2.4rem 2.5rem 0.6rem 2.5rem;
   }
 }
 
@@ -613,14 +518,34 @@ button a {
   font: 400 1.6rem/2 "EB Garamond";
   letter-spacing: 0.05em;
 }
+@media (min-width:768px) {
+  .question__container__txt--q {
+    font: 400 1.8rem/1.4 "EB Garamond";
+    letter-spacing: 0.05em;
+  }
+}
 
-.question__container__txt {
+.question__container__txt1 {
   display: flex;
   gap: 1.0rem;
-  margin-bottom: 1.9rem;
+  margin-bottom: 0.9rem;
 }
 @media (min-width:768px) {
-  .question__container__txt {
+  .question__container__txt1 {
+    gap: 1.4rem;
+    line-height: 1.4;
+    margin-bottom: 1.4rem;
+
+  }
+}
+
+.question__container__txt2 {
+  display: flex;
+  gap: 1.0rem;
+  margin-bottom: 1.5rem;
+}
+@media (min-width:768px) {
+  .question__container__txt2 {
     gap: 1.4rem;
   }
 }
@@ -649,7 +574,7 @@ button a {
 }
 @media (min-width:768px) {
   .question__container__txt--tag1 {
-    line-height: 3.1;
+    font: 400 1.5rem/1.5 "EB Garamond";
   }
 }
 
@@ -659,7 +584,7 @@ button a {
 }
 @media (min-width:768px) {
   .question__container__txt--tag2 {
-    line-height: 3.1;
+    font: 400 1.5rem/1.5 "EB Garamond";
   }
 }
 
@@ -668,6 +593,9 @@ button a {
 }
 
 /* footer */
+.footer {
+  margin-top: -4rem;
+}
 
 .footer img {
   width: 4rem;
@@ -675,6 +603,12 @@ button a {
   display: block;
   margin-left: auto;
   margin-right: 1.6rem;
+}
+@media (min-width:768px) {
+  .footer img {
+    margin-left: auto;
+    margin-right: 15rem;
+  }
 }
 
 .footer__container {
@@ -684,8 +618,9 @@ button a {
 @media (min-width:768px) {
   .footer__container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    padding: 2.4rem 0rem;
+    height: 10.4rem;
   }
 }
 
@@ -697,6 +632,7 @@ button a {
 }
 @media (min-width:768px) {
   .footer__container__title {
+    font: 400 3.2rem/1.25 'Marcellus';
     margin: 3.2rem 20.6rem 3.2rem 18.2rem;
     font: 400 3.2rem 'Marcellus';
   }
@@ -705,7 +641,7 @@ button a {
 .footer__container__menu {
   display: flex;
   width: 30rem;
-  margin: 2.4rem 0 2.5rem;
+  margin: 2.4rem 0 1.8rem;
   justify-content: center;
   gap: 3rem;
 }
@@ -734,6 +670,7 @@ button a {
 @media (min-width:768px) {
   .footer__container p {
     font-size: 1.2rem;
+    margin-left: 15rem;
   }
 }
 
