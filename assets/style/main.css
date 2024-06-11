@@ -413,7 +413,7 @@ form button {
 .swiper-button-prev {
   top: 28rem;
   left: 0rem;
-  background-image: url(/assets/image/arrow-left-circle-fill.png);
+  background-image: url(/assets/image/arrow_left_circle_fill.svg);
 }
 @media (min-width:768px) {
   .swiper-button-prev {
@@ -425,7 +425,7 @@ form button {
 .swiper-button-next {
   top: 28rem;
   right: 0rem;
-  background-image: url(/assets/image/arrow-right-circle-fill.png);
+  background-image: url(/assets/image/arrow_right_circle_fill.svg);
 }
 @media (min-width:768px) {
   .swiper-button-next {
@@ -590,20 +590,21 @@ form button {
   }
 }
 
-.js-txt1, .js-txt2, .js-txt3, .js-txt4, .js-txt5 {
+.js_txt {
   display: none;
 }
 
 .sticky_icon {
   position: sticky;
   display: flex;
-  bottom: 16.4rem;
+  bottom: 3rem;
+  z-index: 11;
 }
 @media (min-width:768px) {
   .sticky_icon {
     position: sticky;
     display: flex;
-    bottom: 10.4rem;
+    bottom: 3rem;
   }
 }
 
@@ -649,11 +650,13 @@ form button {
 .footer__container__title {
   text-align: center;
   display: block;
-  margin-bottom: 1.8rem;
+  margin: 0 auto;
+  margin-bottom: 2.3rem;
 }
 @media (min-width:768px) {
   .footer__container__title {
     margin: 3.2rem 20.6rem 3.2rem 3.2rem;
+    width: 19rem;
   }
 }
 
