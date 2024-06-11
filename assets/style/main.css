@@ -1,5 +1,6 @@
 html {
   font-size: calc(10 * 100vw /390);
+  scroll-behavior: smooth;
 }
 
 @media (min-width:768px) {
@@ -593,8 +594,17 @@ form button {
   display: none;
 }
 
-.footer {
-  margin-top: 1rem;
+.sticky_icon {
+  position: sticky;
+  display: flex;
+  bottom: 16.4rem;
+}
+@media (min-width:768px) {
+  .sticky_icon {
+    position: sticky;
+    display: flex;
+    bottom: 10.4rem;
+  }
 }
 
 .back__to__top  {
@@ -603,6 +613,7 @@ form button {
   display: block;
   margin-left: auto;
   margin-right: 1.6rem;
+  margin-top: 1rem;
 }
 @media (min-width:768px) {
   .back__to__top {
@@ -611,12 +622,23 @@ form button {
   }
 }
 
-.footer__container {
+.footer {
   background-color: #0071ce;
+}
+@media (min-width:768px) {
+  .footer {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.footer__container {
   padding: 2.4rem 4.5rem;
 }
 @media (min-width:768px) {
   .footer__container {
+    width: 120rem;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     padding: 2.4rem 0rem;
@@ -631,7 +653,7 @@ form button {
 }
 @media (min-width:768px) {
   .footer__container__title {
-    margin: 3.2rem 20.6rem 3.2rem 18.2rem;
+    margin: 3.2rem 20.6rem 3.2rem 3.2rem;
   }
 }
 
@@ -644,8 +666,9 @@ form button {
 }
 @media (min-width:768px) {
   .footer__container__menu {
-    margin: unset;
+    margin: 0;
     width: 34.4rem;
+    gap: 3.1rem;
   }
 }
 
@@ -667,7 +690,7 @@ form button {
 @media (min-width:768px) {
   .footer__container p {
     font-size: 1.2rem;
-    margin-left: 15rem;
+    margin-left: 15.3rem;
   }
 }
 
