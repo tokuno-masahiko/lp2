@@ -9,10 +9,10 @@ const swiper = new Swiper(".swiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-    // スライドの表示枚数：500px未満の場合
+    // スライドの表示枚数：768px未満の場合
     slidesPerView: 1,
     breakpoints: {
-        // スライドの表示枚数：500px以上の場合
+        // スライドの表示枚数：768px以上の場合
         768: {
             slidesPerView: 3,
             spaceBetween: 40,

@@ -347,7 +347,7 @@ form button {
   }
 }
 
-.swiper-img1, .swiper-img2, .swiper-img3, .swiper-img4, .swiper-img5, .swiper-img6 {
+.swiper-img1, .swiper-img2, .swiper-img3, .swiper-img4, .swiper-img5, .swiper-img6, .swiper-img7 {
   object-position: 40% 10%;
   object-fit: cover;
   display: block;
@@ -357,7 +357,7 @@ form button {
   border-radius: 50%;
 }
 @media (min-width:768px) {
-  .swiper-img1, .swiper-img2, .swiper-img3, .swiper-img4, .swiper-img5, .swiper-img6 {
+  .swiper-img1, .swiper-img2, .swiper-img3, .swiper-img4, .swiper-img5, .swiper-img6, .swiper-img7 {
     width: 10rem;
     height: 10rem;
     margin: 1.3rem auto 0;
@@ -443,7 +443,6 @@ form button {
   width: 0.9rem;
   background-color: #eeeeee;
   opacity: 1;
-
 }
 
 .swiper-pagination-bullet-active {
