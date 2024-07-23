@@ -16,13 +16,13 @@ const swiper = new Swiper(".swiper", {
         768: {
             slidesPerView: 3,
             spaceBetween: 40,
-            slidesPerGroup: 3,
+            slidesPerGroup: 1,
         }
     }
 });
 
-$(function(){
-    $('.js_container').click(function(){
+$(function () {
+    $('.js_container').click(function () {
         $(this).find('.js_txt').slideToggle();
         $(this).find('.js_txt').css('display', 'flex');
         if ($(this).find('.js_up').css('display') == 'none') {
